@@ -163,3 +163,4 @@ gymkwigiraii@kwigiras-iMac exercise1 %
 
 ## Exercise 2
 
+this is my first git project.
