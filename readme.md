@@ -428,7 +428,6 @@ Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 gymkwigiraii@kwigiras-iMac exercise1 % 
 
-
 ## Bundler 2
 
 
