@@ -427,3 +427,55 @@ gymkwigiraii@kwigiras-iMac exercise1 % git checkout main
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 gymkwigiraii@kwigiras-iMac exercise1 % 
+
+
+## Bundler 2
+
+
+## Exercise 1
+
+'''bash
+gymkwigiraii@kwigiras-iMac exercise1 % git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+gymkwigiraii@kwigiras-iMac exercise1 % git checkout ft/bundle-2
+Already on 'ft/bundle-2'
+gymkwigiraii@kwigiras-iMac exercise1 % git status
+On branch ft/bundle-2
+Last commands done (2 commands done):
+   pick f47f316 the second commit.
+   pick 0c7bc84 Removed home.html
+No commands remaining.
+You are currently editing a commit while rebasing branch 'dev' on '66295ed'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        services.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+gymkwigiraii@kwigiras-iMac exercise1 % git add .
+gymkwigiraii@kwigiras-iMac exercise1 % git commit -m "i created service html and added some staff"
+[ft/bundle-2 f3aed0e] i created service html and added some staff
+ 1 file changed, 9 insertions(+)
+ create mode 100644 services.html
+gymkwigiraii@kwigiras-iMac exercise1 % git merge main
+Already up to date.
+gymkwigiraii@kwigiras-iMac exercise1 % git push origin ft/bundle-2
+
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 422 bytes | 422.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/IngabireNelly/The-Gym-Git-Exercise-Solutions/pull/new/ft/bundle-2
+remote: 
+To https://github.com/IngabireNelly/The-Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+gymkwigiraii@kwigiras-iMac exercise1 % 
+
+'''
