@@ -2134,3 +2134,71 @@ To https://github.com/IngabireNelly/The-Gym-Git-Exercise-Solutions.git
 gymkwigiraii@kwigiras-iMac exercise1 % 
 
 ''''
+
+## Bundler 4
+
+## Exercise 1
+
+
+'''bash
+gymkwigiraii@kwigiras-iMac exercise1 % git checkout main
+
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+gymkwigiraii@kwigiras-iMac exercise1 % git remote add git-copy https://github.com/IngabireNelly/THE-GYM-Exercises-copy
+gymkwigiraii@kwigiras-iMac exercise1 % git remote -v
+
+git-copy        https://github.com/IngabireNelly/THE-GYM-Exercises-copy (fetch)
+git-copy        https://github.com/IngabireNelly/THE-GYM-Exercises-copy (push)
+origin  https://github.com/IngabireNelly/The-Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/IngabireNelly/The-Gym-Git-Exercise-Solutions.git (push)
+gymkwigiraii@kwigiras-iMac exercise1 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Last commands done (2 commands done):
+   pick f47f316 the second commit.
+   pick 0c7bc84 Removed home.html
+No commands remaining.
+You are currently editing a commit while rebasing branch 'dev' on '66295ed'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   faq.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gymkwigiraii@kwigiras-iMac exercise1 % git add .
+gymkwigiraii@kwigiras-iMac exercise1 % git commit -m "Updated home page"
+[main fe850e8] Updated home page
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+gymkwigiraii@kwigiras-iMac exercise1 % git push origin main
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 320 bytes | 320.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/IngabireNelly/The-Gym-Git-Exercise-Solutions.git
+   7bccf49..fe850e8  main -> main
+gymkwigiraii@kwigiras-iMac exercise1 % git push git-copy main
+
+Enumerating objects: 101, done.
+Counting objects: 100% (101/101), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (95/95), done.
+Writing objects: 100% (101/101), 21.85 KiB | 7.28 MiB/s, done.
+Total 101 (delta 45), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (45/45), done.
+To https://github.com/IngabireNelly/THE-GYM-Exercises-copy
+ * [new branch]      main -> main
+gymkwigiraii@kwigiras-iMac exercise1 % 
+
+'''
+
+
+## Exercise 2
