@@ -2315,3 +2315,231 @@ To https://github.com/IngabireNelly/The-Gym-Git-Exercise-Solutions.git
 gymkwigiraii@kwigiras-iMac exercise1 % 
 
 '''
+
+
+
+
+## Bundler 5 
+
+## Exercise 1
+
+'''bash
+gymkwigiraii@kwigiras-iMac exercise1 % git clone https://github.com/IngabireNelly/git-cafe-exercise 
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 107 (delta 5), reused 4 (delta 4), pack-reused 92 (from 1)
+Receiving objects: 100% (107/107), 1.95 MiB | 1.45 MiB/s, done.
+Resolving deltas: 100% (5/5), done.
+gymkwigiraii@kwigiras-iMac exercise1 % cd git-cafe-exercise
+
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % code.
+zsh: command not found: code.
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % 
+
+'''
+
+## Exercise 2 
+
+'''bash
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % git add .
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % git commit -m "added some things in the index html o
+f this file "
+[main 4c51af3] added some things in the index html of this file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % git push origin main
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 333 bytes | 333.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/IngabireNelly/git-cafe-exercise
+   d1d3f9c..4c51af3  main -> main
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % 
+
+'''
+
+## Bundler 6
+
+## Exercise 1
+
+'''bash
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % git add .
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % git commit -m "added some things in the index html o
+f this file "
+[main 4c51af3] added some things in the index html of this file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % git push origin main
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 333 bytes | 333.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/IngabireNelly/git-cafe-exercise
+   d1d3f9c..4c51af3  main -> main
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % 
+ *  History restored 
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % git branch -b dev
+error: unknown switch `b'
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
+   or: git branch [<options>] [-f] [--recurse-submodules] <branch-name> [<start-point>]
+   or: git branch [<options>] [-l] [<pattern>...]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track[=(direct|inherit)]
+                          set branch tracking configuration
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display object names
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    -c, --copy            copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --list            list branch names
+    --show-current        show current branch name
+    --create-reflog       create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --recurse-submodules  recurse through submodules
+    --format <format>     format to use for the output
+
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % git checkout -b ft/menu-page
+
+Switched to a new branch 'ft/menu-page'
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % git add .
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % git commit -m "Added new menu page"
+[ft/menu-page c4e5a31] Added new menu page
+ 1 file changed, 9 insertions(+)
+ create mode 100644 menu.html
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % git push origin ft/menu-page
+
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 364 bytes | 364.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/menu-page' on GitHub by visiting:
+remote:      https://github.com/IngabireNelly/git-cafe-exercise/pull/new/ft/menu-page
+remote: 
+To https://github.com/IngabireNelly/git-cafe-exercise
+ * [new branch]      ft/menu-page -> ft/menu-page
+'''
+
+ ## Exercise 2
+
+'''bash
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % git checkout -b bugfix/change-title
+
+Switched to a new branch 'bugfix/change-title'
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % git add .
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % git commit -m "Changed title of index-4.html to 'Contact'"
+[bugfix/change-title 365c542] Changed title of index-4.html to 'Contact'
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % git push origin bugfix/change-title
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 327 bytes | 327.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'bugfix/change-title' on GitHub by visiting:
+remote:      https://github.com/IngabireNelly/git-cafe-exercise/pull/new/bugfix/change-title
+remote: 
+To https://github.com/IngabireNelly/git-cafe-exercise
+ * [new branch]      bugfix/change-title -> bugfix/change-title
+ ,,,
+
+
+ ## Exercise 3
+
+ '''bash
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % git checkout -b hotfix/contact-telephone
+
+Switched to a new branch 'hotfix/contact-telephone'
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % git add .
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % git commit -m "Fixed contact telephone number"
+[hotfix/contact-telephone d21c900] Fixed contact telephone number
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+gymkwigiraii@kwigiras-iMac git-cafe-exercise % git push origin hotfix/contact-telephone
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 313 bytes | 313.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'hotfix/contact-telephone' on GitHub by visiting:
+remote:      https://github.com/IngabireNelly/git-cafe-exercise/pull/new/hotfix/contact-telephone
+remote: 
+To https://github.com/IngabireNelly/git-cafe-exercise
+ * [new branch]      hotfix/contact-telephone -> hotfix/contact-telephone
+ '''
