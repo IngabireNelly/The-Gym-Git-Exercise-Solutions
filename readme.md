@@ -478,4 +478,95 @@ To https://github.com/IngabireNelly/The-Gym-Git-Exercise-Solutions.git
  * [new branch]      ft/bundle-2 -> ft/bundle-2
 gymkwigiraii@kwigiras-iMac exercise1 % 
 
-'''
+''''
+
+## Exercise 2
+
+'''bash
+
+gymkwigiraii@kwigiras-iMac exercise1 % git checkout -b ft/service-redesign                      
+
+Switched to a new branch 'ft/service-redesign'
+gymkwigiraii@kwigiras-iMac exercise1 % git add service.html
+
+fatal: pathspec 'service.html' did not match any files
+gymkwigiraii@kwigiras-iMac exercise1 % git status
+On branch ft/service-redesign
+Last commands done (2 commands done):
+   pick f47f316 the second commit.
+   pick 0c7bc84 Removed home.html
+No commands remaining.
+You are currently editing a commit while rebasing branch 'dev' on '66295ed'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   services.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gymkwigiraii@kwigiras-iMac exercise1 % git add .
+gymkwigiraii@kwigiras-iMac exercise1 % git commit -m "Redesigned the service page"
+
+[ft/service-redesign eb59e72] Redesigned the service page
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+gymkwigiraii@kwigiras-iMac exercise1 % git push origin ft/service-redesign
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 361 bytes | 361.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/IngabireNelly/The-Gym-Git-Exercise-Solutions/pull/new/ft/service-redesign
+remote: 
+To https://github.com/IngabireNelly/The-Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+gymkwigiraii@kwigiras-iMac exercise1 % git status
+On branch ft/service-redesign
+Last commands done (2 commands done):
+   pick f47f316 the second commit.
+   pick 0c7bc84 Removed home.html
+No commands remaining.
+You are currently editing a commit while rebasing branch 'dev' on '66295ed'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+nothing to commit, working tree clean
+gymkwigiraii@kwigiras-iMac exercise1 % git checkout main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+gymkwigiraii@kwigiras-iMac exercise1 % git add .
+gymkwigiraii@kwigiras-iMac exercise1 % git commit -m "Updated service page with new service offerings"
+[main 6b807f8] Updated service page with new service offerings
+ 1 file changed, 2 insertions(+)
+gymkwigiraii@kwigiras-iMac exercise1 % git push origin main
+To https://github.com/IngabireNelly/The-Gym-Git-Exercise-Solutions.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/IngabireNelly/The-Gym-Git-Exercise-Solutions.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+gymkwigiraii@kwigiras-iMac exercise1 % git pull
+Auto-merging services.html
+CONFLICT (content): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+gymkwigiraii@kwigiras-iMac exercise1 % git pull
+Already up to date.
+gymkwigiraii@kwigiras-iMac exercise1 % git push origin main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 578 bytes | 578.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/IngabireNelly/The-Gym-Git-Exercise-Solutions.git
+   2a8b6f8..4599bc0  main -> main
+gymkwigiraii@kwigiras-iMac exercise1 % 
