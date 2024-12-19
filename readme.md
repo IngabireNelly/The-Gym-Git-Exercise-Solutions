@@ -163,4 +163,267 @@ gymkwigiraii@kwigiras-iMac exercise1 %
 
 ## Exercise 2
 
-this is my first git project.
+gymkwigiraii@kwigiras-iMac exercise1 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Last command done (1 command done):
+   pick f47f316 the second commit.
+Next command to do (1 remaining command):
+   pick 0c7bc84 Removed home.html
+  (use "git rebase --edit-todo" to view and edit)
+You are currently editing a commit while rebasing branch 'dev' on '66295ed'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        home.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+gymkwigiraii@kwigiras-iMac exercise1 % git add home.html
+gymkwigiraii@kwigiras-iMac exercise1 % git stash
+Saved working directory and index state WIP on main: 208b4da Merge pull request #1 from IngabireNelly/dev
+gymkwigiraii@kwigiras-iMac exercise1 % git stash list
+stash@{0}: WIP on main: 208b4da Merge pull request #1 from IngabireNelly/dev
+stash@{1}: WIP on dev: 0c7bc84 Removed home.html
+gymkwigiraii@kwigiras-iMac exercise1 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Last command done (1 command done):
+   pick f47f316 the second commit.
+Next command to do (1 remaining command):
+   pick 0c7bc84 Removed home.html
+  (use "git rebase --edit-todo" to view and edit)
+You are currently editing a commit while rebasing branch 'dev' on '66295ed'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        about.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+gymkwigiraii@kwigiras-iMac exercise1 % git add about.html
+gymkwigiraii@kwigiras-iMac exercise1 % git stash
+Saved working directory and index state WIP on main: 208b4da Merge pull request #1 from IngabireNelly/dev
+gymkwigiraii@kwigiras-iMac exercise1 % git status 
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Last command done (1 command done):
+   pick f47f316 the second commit.
+Next command to do (1 remaining command):
+   pick 0c7bc84 Removed home.html
+  (use "git rebase --edit-todo" to view and edit)
+You are currently editing a commit while rebasing branch 'dev' on '66295ed'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        team.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+gymkwigiraii@kwigiras-iMac exercise1 % git add .
+gymkwigiraii@kwigiras-iMac exercise1 % git stash
+Saved working directory and index state WIP on main: 208b4da Merge pull request #1 from IngabireNelly/dev
+gymkwigiraii@kwigiras-iMac exercise1 % git stash list
+stash@{0}: WIP on main: 208b4da Merge pull request #1 from IngabireNelly/dev
+stash@{1}: WIP on main: 208b4da Merge pull request #1 from IngabireNelly/dev
+stash@{2}: WIP on main: 208b4da Merge pull request #1 from IngabireNelly/dev
+stash@{3}: WIP on dev: 0c7bc84 Removed home.html
+gymkwigiraii@kwigiras-iMac exercise1 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Last command done (1 command done):
+   pick f47f316 the second commit.
+Next command to do (1 remaining command):
+   pick 0c7bc84 Removed home.html
+  (use "git rebase --edit-todo" to view and edit)
+You are currently editing a commit while rebasing branch 'dev' on '66295ed'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+nothing to commit, working tree clean
+gymkwigiraii@kwigiras-iMac exercise1 % git stash pop
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Last command done (1 command done):
+   pick f47f316 the second commit.
+Next command to do (1 remaining command):
+   pick 0c7bc84 Removed home.html
+  (use "git rebase --edit-todo" to view and edit)
+You are currently editing a commit while rebasing branch 'dev' on '66295ed'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   team.html
+
+Dropped refs/stash@{0} (fb76fb8cb6a1e1555b1a41827bc8bfbc2da44b92)
+gymkwigiraii@kwigiras-iMac exercise1 % git add .
+gymkwigiraii@kwigiras-iMac exercise1 % git stash
+Saved working directory and index state WIP on main: 208b4da Merge pull request #1 from IngabireNelly/dev
+gymkwigiraii@kwigiras-iMac exercise1 % git stash list
+stash@{0}: WIP on main: 208b4da Merge pull request #1 from IngabireNelly/dev
+stash@{1}: WIP on main: 208b4da Merge pull request #1 from IngabireNelly/dev
+stash@{2}: WIP on main: 208b4da Merge pull request #1 from IngabireNelly/dev
+stash@{3}: WIP on dev: 0c7bc84 Removed home.html
+gymkwigiraii@kwigiras-iMac exercise1 % git stash pop stash@{2}
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Last command done (1 command done):
+   pick f47f316 the second commit.
+Next command to do (1 remaining command):
+   pick 0c7bc84 Removed home.html
+  (use "git rebase --edit-todo" to view and edit)
+You are currently editing a commit while rebasing branch 'dev' on '66295ed'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   home.html
+
+Dropped stash@{2} (71453b708ff71c12a22b41118e2ea9f1f2724e44)
+gymkwigiraii@kwigiras-iMac exercise1 % git add .
+gymkwigiraii@kwigiras-iMac exercise1 % git commit
+hint: Waiting for your editor to close the file... code --wait: code: command not found
+error: There was a problem with the editor 'code --wait'.
+Please supply the message using either -m or -F option.
+gymkwigiraii@kwigiras-iMac exercise1 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Last command done (1 command done):
+   pick f47f316 the second commit.
+Next command to do (1 remaining command):
+   pick 0c7bc84 Removed home.html
+  (use "git rebase --edit-todo" to view and edit)
+You are currently editing a commit while rebasing branch 'dev' on '66295ed'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   home.html
+
+gymkwigiraii@kwigiras-iMac exercise1 % git add home.html
+gymkwigiraii@kwigiras-iMac exercise1 % git commit
+hint: Waiting for your editor to close the file... code --wait: code: command not found
+error: There was a problem with the editor 'code --wait'.
+Please supply the message using either -m or -F option.
+gymkwigiraii@kwigiras-iMac exercise1 % git stash        
+Saved working directory and index state WIP on main: 208b4da Merge pull request #1 from IngabireNelly/dev
+gymkwigiraii@kwigiras-iMac exercise1 % git stash pop
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Last command done (1 command done):
+   pick f47f316 the second commit.
+Next command to do (1 remaining command):
+   pick 0c7bc84 Removed home.html
+  (use "git rebase --edit-todo" to view and edit)
+You are currently editing a commit while rebasing branch 'dev' on '66295ed'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   home.html
+
+Dropped refs/stash@{0} (45f1e24ec7a4bf29923fce52e8bdf59e593e2bc1)
+gymkwigiraii@kwigiras-iMac exercise1 % git add .
+gymkwigiraii@kwigiras-iMac exercise1 % git commit 
+hint: Waiting for your editor to close the file... code --wait: code: command not found
+error: There was a problem with the editor 'code --wait'.
+Please supply the message using either -m or -F option.
+gymkwigiraii@kwigiras-iMac exercise1 % git commit -m "home commit"
+[main 584b4d1] home commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 home.html
+gymkwigiraii@kwigiras-iMac exercise1 % git stash list
+stash@{0}: WIP on main: 208b4da Merge pull request #1 from IngabireNelly/dev
+stash@{1}: WIP on main: 208b4da Merge pull request #1 from IngabireNelly/dev
+stash@{2}: WIP on dev: 0c7bc84 Removed home.html
+gymkwigiraii@kwigiras-iMac exercise1 % git stash pop stash@{1}
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Last command done (1 command done):
+   pick f47f316 the second commit.
+Next command to do (1 remaining command):
+   pick 0c7bc84 Removed home.html
+  (use "git rebase --edit-todo" to view and edit)
+You are currently editing a commit while rebasing branch 'dev' on '66295ed'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+
+Dropped stash@{1} (3fdb8fb0c3ce4d7a2447e6a1b68f767c2f1a8e3b)
+gymkwigiraii@kwigiras-iMac exercise1 % git add .
+gymkwigiraii@kwigiras-iMac exercise1 % git commit -m "about was commit" 
+[main d65ae45] about was commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 about.html
+gymkwigiraii@kwigiras-iMac exercise1 % git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Last command done (1 command done):
+   pick f47f316 the second commit.
+Next command to do (1 remaining command):
+   pick 0c7bc84 Removed home.html
+  (use "git rebase --edit-todo" to view and edit)
+You are currently editing a commit while rebasing branch 'dev' on '66295ed'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        team.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+gymkwigiraii@kwigiras-iMac exercise1 % git stash list
+stash@{0}: WIP on main: 208b4da Merge pull request #1 from IngabireNelly/dev
+stash@{1}: WIP on dev: 0c7bc84 Removed home.html
+gymkwigiraii@kwigiras-iMac exercise1 % git add .                       
+gymkwigiraii@kwigiras-iMac exercise1 % git commit -m "team was commit"
+[main 52e9ec4] team was commit
+ 1 file changed, 9 insertions(+)
+ create mode 100644 team.html
+gymkwigiraii@kwigiras-iMac exercise1 % git stash list                  
+stash@{0}: WIP on main: 208b4da Merge pull request #1 from IngabireNelly/dev
+stash@{1}: WIP on dev: 0c7bc84 Removed home.html
+gymkwigiraii@kwigiras-iMac exercise1 % git push      
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 855 bytes | 855.00 KiB/s, done.
+Total 8 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/IngabireNelly/The-Gym-Git-Exercise-Solutions.git
+   208b4da..52e9ec4  main -> main
+gymkwigiraii@kwigiras-iMac exercise1 % git checkout dev
+Switched to branch 'dev'
+Your branch is behind 'origin/dev' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+gymkwigiraii@kwigiras-iMac exercise1 % git pull
+Updating c5111cc..c73e0e6
+Fast-forward
+gymkwigiraii@kwigiras-iMac exercise1 % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+gymkwigiraii@kwigiras-iMac exercise1 % 
