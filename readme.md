@@ -427,8 +427,6 @@ gymkwigiraii@kwigiras-iMac exercise1 % git checkout main
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 gymkwigiraii@kwigiras-iMac exercise1 % 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 
 ## Bundler 2
@@ -572,7 +570,3 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/IngabireNelly/The-Gym-Git-Exercise-Solutions.git
    2a8b6f8..4599bc0  main -> main
 gymkwigiraii@kwigiras-iMac exercise1 % 
-=======
->>>>>>> ff3e947 (saved the unsaved html files)
-=======
->>>>>>> ff3e947 (saved the unsaved html files)
