@@ -2202,3 +2202,116 @@ gymkwigiraii@kwigiras-iMac exercise1 %
 
 
 ## Exercise 2
+
+
+
+'''bash
+gymkwigiraii@kwigiras-iMac exercise1 % git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+gymkwigiraii@kwigiras-iMac exercise1 % git status
+On branch ft/footer
+Last commands done (2 commands done):
+   pick f47f316 the second commit.
+   pick 0c7bc84 Removed home.html
+No commands remaining.
+You are currently editing a commit while rebasing branch 'dev' on '66295ed'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   team.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gymkwigiraii@kwigiras-iMac exercise1 % git add .
+gymkwigiraii@kwigiras-iMac exercise1 % git commit -m "made some changes on team html"
+[ft/footer e9b8ede] made some changes on team html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+gymkwigiraii@kwigiras-iMac exercise1 % git status                                    
+On branch ft/footer
+Last commands done (2 commands done):
+   pick f47f316 the second commit.
+   pick 0c7bc84 Removed home.html
+No commands remaining.
+You are currently editing a commit while rebasing branch 'dev' on '66295ed'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   services.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gymkwigiraii@kwigiras-iMac exercise1 % git add .                                     
+gymkwigiraii@kwigiras-iMac exercise1 % git commit -m "made some changes on services html"
+[ft/footer 48b0fcc] made some changes on services html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+gymkwigiraii@kwigiras-iMac exercise1 % git push origin ft/footer
+
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 658 bytes | 658.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
+remote: 
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/IngabireNelly/The-Gym-Git-Exercise-Solutions/pull/new/ft/footer
+remote: 
+To https://github.com/IngabireNelly/The-Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/footer -> ft/footer
+gymkwigiraii@kwigiras-iMac exercise1 % git checkout main
+
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+gymkwigiraii@kwigiras-iMac exercise1 % git checkout -b ft/squashing
+
+Switched to a new branch 'ft/squashing'
+gymkwigiraii@kwigiras-iMac exercise1 % git merge --squash ft/footer
+Updating 2915c64..48b0fcc
+Fast-forward
+Squash commit -- not updating HEAD
+ services.html | 2 +-
+ team.html     | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+gymkwigiraii@kwigiras-iMac exercise1 % git status
+On branch ft/squashing
+Last commands done (2 commands done):
+   pick f47f316 the second commit.
+   pick 0c7bc84 Removed home.html
+No commands remaining.
+You are currently editing a commit while rebasing branch 'dev' on '66295ed'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   services.html
+        modified:   team.html
+
+gymkwigiraii@kwigiras-iMac exercise1 % git add .
+gymkwigiraii@kwigiras-iMac exercise1 % git commit -m "footer changes squashing"
+
+[ft/squashing e48e4f4] footer changes squashing
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+gymkwigiraii@kwigiras-iMac exercise1 % git push origin ft/squashing
+
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 423 bytes | 423.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote: 
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/IngabireNelly/The-Gym-Git-Exercise-Solutions/pull/new/ft/squashing
+remote: 
+To https://github.com/IngabireNelly/The-Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
+gymkwigiraii@kwigiras-iMac exercise1 % 
+
+'''
